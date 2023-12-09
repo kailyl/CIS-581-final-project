@@ -1,0 +1,13 @@
+NumPy: version 1.23.5
+SciPy: version 1.11.4
+imageio: version 2.31.6
+mtcnn: version 0.1.0
+cv2: version 4.8.0
+matplotlib: version 3.7.1
+PIL: version 9.4.0
+IPython: version 7.34.0
+torchvision: version 0.16.0+cu118
+torch: version 2.1.0+cu118
+cv2: version 4.8.0
+dlib: version 19.24.2
+facenet_pytorch: version 2.5.3
