@@ -53,13 +53,14 @@ In order to fix this, we froze all layers except for the last fully connected li
 
 ## References
 
-We utilized the following resources to help us with our project:
-How to Use a Webcam in Google Colab: https://www.youtube.com/watch?v=YjWh7QvVH60
+We utilized the following resources to help us with our project:  
 
-Google Colab Camera Capture: https://colab.research.google.com/#snippetFileIds=%2Fv2%2Fexternal%2Fnotebooks%2Fsnippets%2Fadvanced_outputs.ipynb&snippetQuery=Camera%20Capture
+How to Use a Webcam in Google Colab: https://www.youtube.com/watch?v=YjWh7QvVH60  
 
-Face Recognition Using Transfer Learning: https://github.com/sabarish244/Face-Recognition-using-Transfer-learning
+Google Colab Camera Capture: https://colab.research.google.com/#snippetFileIds=%2Fv2%2Fexternal%2Fnotebooks%2Fsnippets%2Fadvanced_outputs.ipynb&snippetQuery=Camera%20Capture  
 
-Fine Tuning an InceptionResnetV1 Model: https://github.com/timesler/facenet-pytorch/blob/master/examples/finetune.ipynb
+Face Recognition Using Transfer Learning: https://github.com/sabarish244/Face-Recognition-using-Transfer-learning  
 
-ChatGPT: https://chat.openai.com/
+Fine Tuning an InceptionResnetV1 Model: https://github.com/timesler/facenet-pytorch/blob/master/examples/finetune.ipynb  
+
+ChatGPT: https://chat.openai.com/  
