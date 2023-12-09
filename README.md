@@ -50,6 +50,9 @@ In order to improve our model, we utilized fine tuning on InceptionResnetV1. Our
 
 In order to fix this, we froze all layers except for the last fully connected linear layer which would result in our model picking up on the general facial features and then specifically tuning them towards Leonardo’s features. This change was largely successful and resulted in a jump to 92% accuracy on both our training and validation test sets while not overfitting. Our final optimization was to test out different learning rates and when we reduced our learning rate to 0.0001, we found that our training time reduced to 30 minutes and our accuracy jumped to 95%.
 
+**Live Video Stream Integration **
+To capture live video using Google Colab, we utilized Colab’s camera capture code snippets to integrate our computer’s live stream with the notebook. Then, we processed every frame of the video stream through our face detection model. We employed both Haar Cascade for face detection (acknowledging its limitation in detecting tilted faces) and MTCNN (which processes at a slower rate). For each identified face, our model was applied, generating an overlay image with bounding boxes highlighting the facial detections and the model's predictions. More specifically, we passed in each extracted face into our trained model. Then, we applied the sigmoid function to each element of the output of our model. These values represented the model’s confidence scores for the face being Leonardo DiCaprio, and not being Leonardo DiCaprio, respectively. We compared these confidence scores to see which was higher and displayed the score (in percentage form) as well as the corresponding label above the bounding box in the live video. 
+
 
 ## References
 
