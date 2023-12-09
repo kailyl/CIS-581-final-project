@@ -14,9 +14,9 @@ Lastly, we implemented a live video stream facial recognition system using our t
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Installation](#installation/setup)
 - [Usage](#usage)
-- [Features](#features)
+- [Implementation Details](#implementation details)
 - [References](#references)
 
 ## Installation/Setup
