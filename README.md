@@ -14,12 +14,12 @@ Lastly, we implemented a live video stream facial recognition system using our t
 
 ## Table of Contents
 
-- [Installation](#installation/setup)
+- [Installation](#installation)
 - [Usage](#usage)
-- [Implementation Details](#implementation details)
+- [Features](#features)
 - [References](#references)
 
-## Installation/Setup
+## Installation
 
 Installation follows the pytorch-video-stream notebook.  
 1) Copy face_recog_2.h5 and pytorch-video-stream.ipynb to your local drive. The first file face_recog_2.h5 holds the fine tuned InceptionNet model and pytorch-video-stream is the notebook which will allow you to run the live stream.
