@@ -1,0 +1,8 @@
+NumPy: version 1.23.5
+SciPy: version 1.11.4
+imageio: version 2.31.6
+mtcnn: version 0.1.0
+cv2: version 4.8.0
+matplotlib: version 3.7.1
+PIL: version 9.4.0
+
