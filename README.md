@@ -16,8 +16,9 @@ Lastly, we implemented a live video stream facial recognition system using our t
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
+- [Implementation](#implementation)
 - [References](#references)
+- [Results](#results)
 
 ## Installation
 
@@ -32,7 +33,7 @@ Installation follows the pytorch-video-stream notebook.
 
 After following the above instructions, you should see a video stream under the "Video Stream" cell. As you move, you should see a white boundary box around your face. Note that our model works best when the user's face is vertically straight (with relatively small head tilt). This can be changed by activating MTCNN instead of Haar Cascade but will result in a large dip in performance. This boundary box will also display a label of whether or not you are Leonardo DiCaprio along with the confidence of the model that you are or are not Leonardo. You can now take your favorite photo of Leonardo DiCaprio and place it in front of the camera. The model works best in good lighting but will also work relatively well with dim lighting or pictures that are rotated at a slight angle. As you move around the picture of Leonardo DiCaprio, you should see the boundary box continue to follow Leonardo. 
 
-## Implementation Details
+## Implementation
 
 The implementation details of our project fall mainly into 3 categories:  
 
@@ -52,6 +53,11 @@ In order to fix this, we froze all layers except for the last fully connected li
 
 **Live Video Stream Integration**  
 To capture live video using Google Colab, we utilized Colab’s camera capture code snippets to integrate our computer’s live stream with the notebook. Then, we processed every frame of the video stream through our face detection model. We employed both Haar Cascade for face detection (acknowledging its limitation in detecting tilted faces) and MTCNN (which processes at a slower rate). For each identified face, our model was applied, generating an overlay image with bounding boxes highlighting the facial detections and the model's predictions. More specifically, we passed in each extracted face into our trained model. Then, we applied the sigmoid function to each element of the output of our model. These values represented the model’s confidence scores for the face being Leonardo DiCaprio, and not being Leonardo DiCaprio, respectively. We compared these confidence scores to see which was higher and displayed the score (in percentage form) as well as the corresponding label above the bounding box in the live video. 
+
+## Results 
+<img width="333" height="244" alt="Screenshot 2023-12-23 at 4 44 10 PM" src="https://github.com/kailyl/CIS-581-final-project/assets/59887357/fe8cb050-2526-4ec3-aaa7-b661f43bf46d">
+<img width="333" height="244" alt="Screenshot 2023-12-23 at 4 44 19 PM" src="https://github.com/kailyl/CIS-581-final-project/assets/59887357/19ce765e-b10f-4ca2-a016-e67c219c1650">
+<img width="333" height="244" alt="Screenshot 2023-12-23 at 4 42 41 PM" src="https://github.com/kailyl/CIS-581-final-project/assets/59887357/067ee7c5-e51d-4c81-8744-699bc4307f34">
 
 
 ## References
